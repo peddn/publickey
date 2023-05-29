@@ -9,10 +9,24 @@
   </head>
   <body>
     <main class="container">
-      <h2>public@peddn.net</h2>
-      <a href="/public/public@peddn.net.asc" download> public@peddn.net.asc </a>
-      <article>
-        <pre><code>
+      <div class="row">
+        <div class="column column-50 column-offset-25">
+          <h2>public@peddn.net</h2>
+          <hr />
+          <div class="row">
+            <div class="column">
+              <a href="/public/public@peddn.net.asc" download
+                >&#128466; public@peddn.net.asc
+              </a>
+            </div>
+            <div class="column">
+              <button onclick="copyToClipboard()" id="button">
+                in die Zwischenablage kopieren
+              </button>
+            </div>
+          </div>
+
+          <pre><code id="key">
     -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGR0nyUBEADehU+9debybmzBpke1Ce/kDvLsvTu+OxnzF6ED3RrZ/eyFe53Z
@@ -65,7 +79,9 @@ yk4DEAjBJbPjZf9rcZgSXvPDZ6Pkilvrd16izsm+VXfCJ5mvpg6Wl48kkDZT/DoP
 =Mp21
 -----END PGP PUBLIC KEY BLOCK-----
 </code></pre>
-      </article>
+        </div>
+      </div>
     </main>
+    <script src="js/main.js"></script>
   </body>
 </html>
